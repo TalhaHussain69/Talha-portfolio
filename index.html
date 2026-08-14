@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Talha Hussain — Frontend Web Developer</title>
+    <meta name="description" content="Portfolio of Muhammad Talha Hussain, a modern Frontend Web Developer crafting futuristic, responsive and high-performance digital experiences.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Atmosphere -->
+    <div class="bg-atmosphere">
+        <div class="radial-glow-bg"></div>
+        <div class="bg-grid"></div>
+        <div id="particles-container"></div>
+    </div>
+
+    <!-- Floating Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Left: Logo -->
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;/&gt;</span>
+            </a>
+
+            <!-- Center: Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Right: CTA & Theme Toggle -->
+            <div class="nav-right">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun theme-icon"></i>
+                </button>
+                
+                <a href="https://wa.me/923203232069?text=Hello%20Muhammad%20Talha%20Hussain%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20or%20opportunity%20with%20you." target="_blank" rel="noopener noreferrer" class="btn-talk" aria-label="Let's Talk on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Let's Talk</span>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            
+            <!-- LEFT COLUMN: Content (Completely Stable) -->
+            <div class="hero-left">
+                <!-- Welcome Label -->
+                <div class="welcome-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">WELCOME TO MY PORTFOLIO</span>
+                </div>
+
+                <!-- Main Name Heading -->
+                <h1 class="hero-name">
+                    <span class="name-first">Muhammad</span>
+                    <span class="name-last">Talha Hussain</span>
+                </h1>
+
+                <!-- Dynamic Typing Role -->
+                <div class="dynamic-role">
+                    <span class="role-text" id="typing-text"></span><span class="blinking-cursor">|</span>
+                </div>
+
+                <!-- Short Description -->
+                <p class="hero-description">
+                    I craft modern, responsive and high-performance digital experiences with clean code, thoughtful design and creative technology.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta-group">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore My Work</span>
+                        <i class="fas fa-arrow-right arrow-icon"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1JvuRhxL83rG3utXS4BPad3TzY1dfIDsF/view?usp=sharing" class="btn btn-secondary">
+                        <span>Open CV</span>
+                        <i class="fas fa-arrow-down arrow-icon"></i>
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-section">
+                    <span class="social-label">FIND ME ON</span>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:talhahussaintalha4@gmail.com" class="social-btn" aria-label="Email">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: 3D Visual Workstation (Dedicated Hover Container) -->
+            <div class="hero-right">
+                <div class="hero-visual" id="hero-visual">
+                    <div class="scene-3d-wrapper" id="scene-wrapper">
+                        <!-- Cyan Radial Glow behind 3D visual -->
+                        <div class="scene-cyan-glow"></div>
+
+                        <!-- 1. Upgraded Holographic Ring System -->
+                        <div class="holographic-ring-container" id="layer-ring">
+                            <div class="holographic-ring">
+                                <div class="ring-layer ring-outer-metal"></div>
+                                <div class="ring-layer ring-cyan-glow"></div>
+                                <div class="ring-layer ring-segmented">
+                                    <span class="seg seg-1"></span>
+                                    <span class="seg seg-2"></span>
+                                    <span class="seg seg-3"></span>
+                                </div>
+                                <div class="ring-layer ring-hud-circle"></div>
+                                <div class="ring-layer ring-inner-core"></div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Futuristic Energy Levitation Base -->
+                        <div class="energy-core-container" id="layer-platform">
+                            <div class="energy-core">
+                                <div class="core-ring-outer"></div>
+                                <div class="core-ring-cyan"></div>
+                                <div class="core-glowing-center"></div>
+                                <div class="core-pulses"></div>
+                                <div class="core-under-glow"></div>
+                                
+                                <!-- 3D Curved Teal Energy Ribbon -->
+                                <div class="energy-ribbon-3d" id="layer-ribbon">
+                                    <svg viewBox="0 0 400 220" class="ribbon-svg">
+                                        <path d="M 20,180 Q 140,210 270,110 T 380,30" fill="none" stroke="url(#ribbon-grad)" stroke-width="3" filter="url(#glow-filter)" />
+                                        <defs>
+                                            <linearGradient id="ribbon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#00E5E5" stop-opacity="0.2" />
+                                                <stop offset="50%" stop-color="#00E5E5" stop-opacity="1" />
+                                                <stop offset="100%" stop-color="#00B8B8" stop-opacity="0.3" />
+                                            </linearGradient>
+                                            <filter id="glow-filter" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feGaussianBlur stdDeviation="5" result="blur" />
+                                                <feMerge>
+                                                    <feMergeNode in="blur" />
+                                                    <feMergeNode in="SourceGraphic" />
+                                                </feMerge>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Main Futuristic Developer Workstation (Floating Laptop) -->
+                        <div class="laptop-workstation-container" id="layer-laptop">
+                            <div class="workstation-3d">
+                                
+                                <!-- Floating Holographic HUD Elements Above Screen -->
+                                <div class="holographic-hud-group" id="layer-hud">
+                                    <span class="hud-pill pill-html">HTML</span>
+                                    <span class="hud-pill pill-css">CSS</span>
+                                    <span class="hud-pill pill-js">JS</span>
+                                    <span class="hud-pill pill-ui">UI/UX</span>
+                                </div>
+
+                                <!-- Floating Holographic Projected Code Symbol Above Keyboard -->
+                                <div class="holographic-projection" id="layer-projection">
+                                    <div class="projection-beam"></div>
+                                    <div class="projection-code">&lt;/&gt;</div>
+                                </div>
+
+                                <!-- Laptop Chassis -->
+                                <div class="laptop-chassis">
+                                    
+                                    <!-- Screen Display angled 105-110 deg -->
+                                    <div class="screen-chassis">
+                                        <div class="screen-bevel">
+                                            <div class="webcam-dot"></div>
+                                            <div class="screen-display">
+                                                <div class="display-glow"></div>
+                                                <div class="display-header">
+                                                    <span class="dot dot-r"></span>
+                                                    <span class="dot dot-y"></span>
+                                                    <span class="dot dot-g"></span>
+                                                    <span class="title-bar">main.js</span>
+                                                </div>
+                                                <div class="display-code-editor">
+                                                    <div class="code-line-row">
+                                                        <span class="c-tag">&lt;</span><span class="c-keyword">Developer</span> <span class="c-tag">/&gt;</span>
+                                                    </div>
+                                                    <div class="code-line-row blank"></div>
+                                                    <div class="code-line-row">
+                                                        <span class="c-var">const</span> <span class="c-name">experience</span> = {
+                                                    </div>
+                                                    <div class="code-line-row indent">
+                                                        <span class="c-prop">design:</span> <span class="c-str">"creative"</span>,
+                                                    </div>
+                                                    <div class="code-line-row indent">
+                                                        <span class="c-prop">code:</span> <span class="c-str">"clean"</span>,
+                                                    </div>
+                                                    <div class="code-line-row indent">
+                                                        <span class="c-prop">future:</span> <span class="c-bool">true</span>
+                                                    </div>
+                                                    <div class="code-line-row">
+                                                        };
+                                                    </div>
+                                                </div>
+                                                <div class="scanner-line"></div>
+                                                <div class="display-reflection"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Keyboard Base / Chassis Deck -->
+                                    <div class="base-chassis">
+                                        <div class="deck-surface">
+                                            <div class="keyboard-casing">
+                                                <div class="kb-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                                                <div class="kb-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                                                <div class="kb-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                                                <div class="kb-row kb-bottom"><span class="key-spacebar"></span></div>
+                                            </div>
+                                            <div class="trackpad-glass"></div>
+                                            <div class="chassis-power-led"></div>
+                                        </div>
+                                        <div class="chassis-edge-glow"></div>
+                                    </div>
+
+                                </div>
+                                
+                                <!-- Under-laptop Levitation Glow Gap -->
+                                <div class="levitation-cyan-glow"></div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Refined Floating 3D Objects -->
+                        <!-- Metallic Dark Pearl Sphere -->
+                        <div class="floating-element sphere-pearl" id="layer-sphere1">
+                            <div class="sphere sphere-dark-pearl"></div>
+                        </div>
+
+                        <!-- Glowing Teal Sphere -->
+                        <div class="floating-element sphere-cyan" id="layer-sphere2">
+                            <div class="sphere sphere-glowing-teal"></div>
+                        </div>
+
+                        <!-- Transparent Glass-like Teal 3D Code Cube -->
+                        <div class="floating-element glass-cube-wrapper" id="layer-cube">
+                            <div class="glass-cube-3d">
+                                <div class="g-face face-f">&lt;/&gt;</div>
+                                <div class="g-face face-b"></div>
+                                <div class="g-face face-r"></div>
+                                <div class="g-face face-l"></div>
+                                <div class="g-face face-t"></div>
+                                <div class="g-face face-bot"></div>
+                            </div>
+                        </div>
+
+                        <!-- Ambient Dust Particles -->
+                        <div class="scene-particles">
+                            <span class="sc-particle p1"></span>
+                            <span class="sc-particle p2"></span>
+                            <span class="sc-particle p3"></span>
+                            <span class="sc-particle p4"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL DOWN</span>
+            <div class="mouse-icon">
+                <span class="mouse-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM ANIMATED TECH STACK MARQUEE SECTION -->
+    <section class="tech-marquee-section" aria-label="Technology Stack">
+        <div class="marquee-border-line top-line"></div>
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <!-- First Set -->
+                <div class="marquee-set">
+                    <div class="tech-item"><i class="fab fa-html5 tech-icon"></i><span>HTML5</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fab fa-css3-alt tech-icon"></i><span>CSS3</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fab fa-js-square tech-icon"></i><span>JavaScript</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fab fa-react tech-icon"></i><span>React.js</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fas fa-file-code tech-icon"></i><span>TypeScript</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fab fa-git-alt tech-icon"></i><span>Git</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fab fa-github tech-icon"></i><span>GitHub</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fab fa-bootstrap tech-icon"></i><span>Bootstrap</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fas fa-wind tech-icon"></i><span>Tailwind CSS</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fab fa-figma tech-icon"></i><span>Figma</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fas fa-network-wired tech-icon"></i><span>REST APIs</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                    <div class="tech-item"><i class="fab fa-node-js tech-icon"></i><span>Node.js</span></div>
+                    <span class="tech-separator" aria-hidden="true">✦</span>
+                </div>
+
+                <!-- Duplicate Set (for seamless continuous loop) -->
+                <div class="marquee-set" aria-hidden="true">
+                    <div class="tech-item"><i class="fab fa-html5 tech-icon"></i><span>HTML5</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fab fa-css3-alt tech-icon"></i><span>CSS3</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fab fa-js-square tech-icon"></i><span>JavaScript</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fab fa-react tech-icon"></i><span>React.js</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fas fa-file-code tech-icon"></i><span>TypeScript</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fab fa-git-alt tech-icon"></i><span>Git</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fab fa-github tech-icon"></i><span>GitHub</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fab fa-bootstrap tech-icon"></i><span>Bootstrap</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fas fa-wind tech-icon"></i><span>Tailwind CSS</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fab fa-figma tech-icon"></i><span>Figma</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fas fa-network-wired tech-icon"></i><span>REST APIs</span></div>
+                    <span class="tech-separator">✦</span>
+                    <div class="tech-item"><i class="fab fa-node-js tech-icon"></i><span>Node.js</span></div>
+                    <span class="tech-separator">✦</span>
+                </div>
+            </div>
+        </div>
+        <div class="marquee-border-line bottom-line"></div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            
+            <!-- LEFT COLUMN: Larger Portrait Composition -->
+            <div class="about-left">
+                <div class="about-portrait-visual" id="about-portrait-visual">
+                    <!-- Ambient Glow Behind Portrait -->
+                    <div class="portrait-ambient-glow"></div>
+
+                    <!-- Holographic 3D HUD Rings -->
+                    <div class="portrait-hud-rings" id="layer-portrait-hud">
+                        <div class="p-hud-ring ring-outer-thin"></div>
+                        <div class="p-hud-ring ring-segmented-teal">
+                            <span class="p-seg p-seg-1"></span>
+                            <span class="p-seg p-seg-2"></span>
+                        </div>
+                        <div class="p-hud-ring ring-inner-dots"></div>
+                        <div class="p-hud-ring ring-hud-tech"></div>
+                    </div>
+
+                    <!-- Transparent PNG Portrait (User's Formal Portrait) -->
+                    <div class="portrait-img-wrapper" id="layer-portrait-img">
+                        <img src="portrait.png" alt="Muhammad Talha Hussain" class="portrait-img" id="portrait-img">
+                    </div>
+
+                    <!-- Floating HUD Badges -->
+                    <!-- Badge 1: 2+ Years of Learning (Top Right) -->
+                    <div class="floating-badge badge-experience" id="layer-badge1">
+                        <span class="badge-num">2+</span>
+                        <span class="badge-sub">Years of<br>Learning</span>
+                    </div>
+
+                    <!-- Badge 2: </> Frontend Developer (Bottom Left) -->
+                    <div class="floating-badge badge-developer" id="layer-badge2">
+                        <span class="badge-code-icon">&lt;/&gt;</span>
+                        <span class="badge-title">Frontend<br>Developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: About Content -->
+            <div class="about-right">
+                <!-- Section Badge -->
+                <div class="welcome-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">ABOUT ME</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h2 class="about-heading">
+                    <span class="heading-first">I'm Muhammad</span>
+                    <span class="heading-last">Talha Hussain</span>
+                </h2>
+
+                <!-- Introduction Paragraph -->
+                <p class="about-description">
+                    A passionate Frontend Web Developer who loves turning ideas into interactive, responsive and user-friendly digital experiences. I focus on clean code, modern design and performance.
+                </p>
+
+                <!-- Personal Information Panel -->
+                <div class="info-panel">
+                    <div class="info-column">
+                        <div class="info-row">
+                            <div class="info-icon"><i class="far fa-user"></i></div>
+                            <div class="info-data">
+                                <span class="info-label">Name</span>
+                                <span class="info-val">Muhammad Talha Hussain</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon"><i class="fas fa-user-tag"></i></div>
+                            <div class="info-data">
+                                <span class="info-label">Father's Name</span>
+                                <span class="info-val">Muhammad Ramzan</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon"><i class="far fa-calendar-alt"></i></div>
+                            <div class="info-data">
+                                <span class="info-label">Date of Birth</span>
+                                <span class="info-val">30 December 2005</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon"><i class="far fa-flag"></i></div>
+                            <div class="info-data">
+                                <span class="info-label">Nationality</span>
+                                <span class="info-val">Pakistani</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-column">
+                        <div class="info-row">
+                            <div class="info-icon"><i class="fas fa-moon"></i></div>
+                            <div class="info-data">
+                                <span class="info-label">Religion</span>
+                                <span class="info-val">Islam</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-data">
+                                <span class="info-label">Phone</span>
+                                <span class="info-val">03203232069</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon"><i class="far fa-envelope"></i></div>
+                            <div class="info-data">
+                                <span class="info-label">Email</span>
+                                <span class="info-val">talhahussaintalha4@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-data">
+                                <span class="info-label">Address</span>
+                                <span class="info-val">Vehari, Punjab, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Feature Cards -->
+                <div class="feature-cards-grid">
+                    <div class="feature-card">
+                        <div class="card-corner-accent"></div>
+                        <div class="feature-icon"><i class="fas fa-crosshairs"></i></div>
+                        <h3 class="feature-title">Detail Oriented</h3>
+                        <p class="feature-desc">I pay attention to every small detail and believe it makes the big difference.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="card-corner-accent"></div>
+                        <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                        <h3 class="feature-title">Fast Learner</h3>
+                        <p class="feature-desc">I enjoy learning new technologies and building better digital solutions.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="card-corner-accent"></div>
+                        <div class="feature-icon"><i class="far fa-lightbulb"></i></div>
+                        <h3 class="feature-title">Problem Solver</h3>
+                        <p class="feature-desc">I love solving problems and turning complex challenges into simple UI.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="card-corner-accent"></div>
+                        <div class="feature-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="feature-title">Clean Coder</h3>
+                        <p class="feature-desc">I write clean, structured and maintainable code for scale and reliability.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PREMIUM EDUCATION TIMELINE SECTION -->
+    <section id="education" class="education-section">
+        <div class="education-container">
+            
+            <!-- Section Header -->
+            <div class="education-header">
+                <div class="welcome-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">MY EDUCATION</span>
+                </div>
+                <h2 class="education-heading">
+                    <span class="heading-first">My</span>
+                    <span class="heading-last">Learning Journey</span>
+                </h2>
+                <p class="education-description">
+                    My academic journey has given me a strong foundation in science, engineering and computer science, continuously shaping my interest in technology and modern digital experiences.
+                </p>
+            </div>
+
+            <!-- Futuristic Timeline Wrapper -->
+            <div class="timeline-wrapper">
+                <!-- Connecting Line Track -->
+                <div class="timeline-line-track">
+                    <div class="timeline-line-progress" id="timeline-progress"></div>
+                    <div class="timeline-particle"></div>
+                </div>
+
+                <!-- Timeline Milestones -->
+                <div class="timeline-milestones">
+                    
+                    <!-- Milestone 1: Matric (Breathing Pulse Node) -->
+                    <div class="milestone-item card-top milestone-1" id="milestone-1">
+                        <div class="timeline-node node-matric">
+                            <div class="node-ring"></div>
+                            <div class="node-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <span class="node-year">2019 – 2021</span>
+                        </div>
+                        <div class="edu-card">
+                            <div class="card-corner-accent"></div>
+                            <div class="edu-card-header">
+                                <div class="edu-degree-group">
+                                    <h3 class="edu-degree">Matric</h3>
+                                    <span class="edu-field">Science</span>
+                                </div>
+                                <span class="grade-badge"><i class="fas fa-award"></i> A GRADE</span>
+                            </div>
+                            <div class="edu-institution">
+                                <i class="fas fa-school inst-icon"></i>
+                                <span>Govt High School 65/WB Vehari</span>
+                            </div>
+                            <p class="edu-desc">
+                                Built my academic foundation through science subjects while developing curiosity, discipline and an early interest in technology.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2: Intermediate (Slow Rotating Ring Node) -->
+                    <div class="milestone-item card-bottom milestone-2" id="milestone-2">
+                        <div class="timeline-node node-intermediate">
+                            <div class="node-ring"></div>
+                            <div class="node-icon"><i class="fas fa-book-open"></i></div>
+                            <span class="node-year">2021 – 2023</span>
+                        </div>
+                        <div class="edu-card">
+                            <div class="card-corner-accent"></div>
+                            <div class="edu-card-header">
+                                <div class="edu-degree-group">
+                                    <h3 class="edu-degree">Intermediate</h3>
+                                    <span class="edu-field">Pre Engineering</span>
+                                </div>
+                                <span class="grade-badge"><i class="fas fa-award"></i> A GRADE</span>
+                            </div>
+                            <div class="edu-institution">
+                                <i class="fas fa-university inst-icon"></i>
+                                <span>KIPS College Vehari</span>
+                            </div>
+                            <p class="edu-desc">
+                                Strengthened my analytical and problem-solving skills through mathematics, physics and engineering-focused studies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3: BS Computer Science (Current Prominent Node) -->
+                    <div class="milestone-item card-top milestone-3" id="milestone-3">
+                        <div class="timeline-node node-bs">
+                            <div class="node-ring"></div>
+                            <div class="node-icon"><i class="fas fa-laptop-code"></i></div>
+                            <span class="node-year">2023 – Present</span>
+                        </div>
+                        <div class="edu-card card-current">
+                            <div class="card-corner-accent"></div>
+                            <div class="edu-card-header">
+                                <div class="edu-degree-group">
+                                    <h3 class="edu-degree">BS Computer Science</h3>
+                                    <span class="edu-field">Computer Science</span>
+                                </div>
+                                <span class="current-badge">
+                                    <span class="c-dot"></span>
+                                    <span>CURRENTLY STUDYING</span>
+                                </span>
+                            </div>
+                            <div class="edu-institution">
+                                <i class="fas fa-graduation-cap inst-icon"></i>
+                                <span>The Islamia University of Bahawalpur</span>
+                            </div>
+                            <p class="edu-desc">
+                                Currently developing deeper expertise in computer science, software development and modern web technologies while building practical projects.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PREMIUM PROJECTS SHOWCASE SECTION (CURATED DIGITAL WORKSPACE) -->
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            
+            <!-- Section Header -->
+            <div class="projects-header">
+                <div class="welcome-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">MY WORK</span>
+                </div>
+                <h2 class="projects-heading">
+                    <span class="heading-first">Featured</span>
+                    <span class="heading-last">Projects</span>
+                </h2>
+                <p class="projects-description">
+                    Selected digital experiences and development work.
+                </p>
+            </div>
+
+            <!-- Vertical Project Directory List -->
+            <div class="project-list">
+
+                <!-- ROW 01: Learning Management System (FEATURED) -->
+                <div class="project-row project-row-featured" id="proj-row-1">
+                    <div class="row-left-group">
+                        <div class="row-number-wrapper">
+                            <span class="row-number">01</span>
+                            <span class="row-featured-tag">FEATURED</span>
+                        </div>
+                        <div class="row-title-container">
+                            <h3 class="row-title">Learning Management System</h3>
+                            <p class="row-desc">
+                                A full-stack learning management platform designed to provide a structured digital environment for managing courses, learning content and user interactions.
+                            </p>
+                            <div class="row-meta">
+                                <span class="row-category">FULL STACK</span>
+                                <span class="row-separator">•</span>
+                                <span class="row-tech">HTML · CSS · JavaScript · Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Image Preview & GitHub Action -->
+                    <div class="row-right-group">
+                        <div class="row-preview-wrapper">
+                            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=600&q=80" alt="Learning Management System project preview" class="row-preview-img">
+                        </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="row-action-link" aria-label="View Learning Management System on GitHub">
+                            <span class="action-text">View GitHub</span>
+                            <i class="fas fa-arrow-right row-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROW 02: Cloth Store -->
+                <div class="project-row" id="proj-row-2">
+                    <div class="row-left-group">
+                        <div class="row-number-wrapper">
+                            <span class="row-number">02</span>
+                        </div>
+                        <div class="row-title-container">
+                            <h3 class="row-title">Cloth Store</h3>
+                            <p class="row-desc">
+                                A modern clothing store website with a clean shopping-focused interface and responsive product presentation.
+                            </p>
+                            <div class="row-meta">
+                                <span class="row-category">E-COMMERCE</span>
+                                <span class="row-separator">•</span>
+                                <span class="row-tech">HTML · CSS · JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-right-group">
+                        <div class="row-preview-wrapper">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="Cloth Store project preview" class="row-preview-img">
+                        </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="row-action-link" aria-label="View Cloth Store on GitHub">
+                            <span class="action-text">View GitHub</span>
+                            <i class="fas fa-arrow-right row-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROW 03: AI Chatbot -->
+                <div class="project-row" id="proj-row-3">
+                    <div class="row-left-group">
+                        <div class="row-number-wrapper">
+                            <span class="row-number">03</span>
+                        </div>
+                        <div class="row-title-container">
+                            <h3 class="row-title">AI Chatbot</h3>
+                            <p class="row-desc">
+                                An interactive AI chatbot interface designed around a modern conversational web experience.
+                            </p>
+                            <div class="row-meta">
+                                <span class="row-category">AI / WEB</span>
+                                <span class="row-separator">•</span>
+                                <span class="row-tech">HTML · CSS · JavaScript · AI API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-right-group">
+                        <div class="row-preview-wrapper">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="AI Chatbot project preview" class="row-preview-img">
+                        </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="row-action-link" aria-label="View AI Chatbot on GitHub">
+                            <span class="action-text">View GitHub</span>
+                            <i class="fas fa-arrow-right row-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROW 04: Grocery Store Website -->
+                <div class="project-row" id="proj-row-4">
+                    <div class="row-left-group">
+                        <div class="row-number-wrapper">
+                            <span class="row-number">04</span>
+                        </div>
+                        <div class="row-title-container">
+                            <h3 class="row-title">Grocery Store Website</h3>
+                            <p class="row-desc">
+                                A responsive grocery shopping interface with organized products and a clean user experience.
+                            </p>
+                            <div class="row-meta">
+                                <span class="row-category">E-COMMERCE</span>
+                                <span class="row-separator">•</span>
+                                <span class="row-tech">HTML · CSS · JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-right-group">
+                        <div class="row-preview-wrapper">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Grocery Store Website project preview" class="row-preview-img">
+                        </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="row-action-link" aria-label="View Grocery Store Website on GitHub">
+                            <span class="action-text">View GitHub</span>
+                            <i class="fas fa-arrow-right row-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROW 05: Trading Website -->
+                <div class="project-row" id="proj-row-5">
+                    <div class="row-left-group">
+                        <div class="row-number-wrapper">
+                            <span class="row-number">05</span>
+                        </div>
+                        <div class="row-title-container">
+                            <h3 class="row-title">Trading Website</h3>
+                            <p class="row-desc">
+                                A modern trading-focused interface designed around financial data presentation and market-style layouts.
+                            </p>
+                            <div class="row-meta">
+                                <span class="row-category">FINANCE</span>
+                                <span class="row-separator">•</span>
+                                <span class="row-tech">HTML · CSS · JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-right-group">
+                        <div class="row-preview-wrapper">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80" alt="Trading Website project preview" class="row-preview-img">
+                        </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="row-action-link" aria-label="View Trading Website on GitHub">
+                            <span class="action-text">View GitHub</span>
+                            <i class="fas fa-arrow-right row-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROW 06: Clinic Appointment System -->
+                <div class="project-row" id="proj-row-6">
+                    <div class="row-left-group">
+                        <div class="row-number-wrapper">
+                            <span class="row-number">06</span>
+                        </div>
+                        <div class="row-title-container">
+                            <h3 class="row-title">Clinic Appointment System</h3>
+                            <p class="row-desc">
+                                A modern clinic appointment platform concept designed around appointment scheduling and a clean digital experience.
+                            </p>
+                            <div class="row-meta">
+                                <span class="row-category">HEALTHCARE</span>
+                                <span class="row-separator">•</span>
+                                <span class="row-tech">HTML · CSS · JavaScript · Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-right-group">
+                        <div class="row-preview-wrapper">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Clinic Appointment System project preview" class="row-preview-img">
+                        </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="row-action-link" aria-label="View Clinic Appointment System on GitHub">
+                            <span class="action-text">View GitHub</span>
+                            <i class="fas fa-arrow-right row-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MORE PROJECTS ON GITHUB CTA (MINIMAL HORIZONTAL LINE + BUTTON) -->
+            <div class="github-cta-row" id="github-cta">
+                <div class="github-cta-left">
+                    <span class="github-cta-label">MORE PROJECTS ON GITHUB</span>
+                    <p class="github-cta-sub">Explore more of my experiments, ideas and development work on GitHub.</p>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-github-minimal">
+                    <span>Explore GitHub</span>
+                    <i class="fas fa-arrow-up-right-from-square cta-arrow"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PREMIUM EXPERIENCE / CAREER JOURNEY SECTION -->
+    <section id="experience" class="experience-section">
+        <div class="experience-container">
+            
+            <!-- Section Header -->
+            <div class="experience-header">
+                <div class="welcome-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">MY EXPERIENCE</span>
+                </div>
+                <h2 class="experience-heading">
+                    <span class="heading-first">My</span>
+                    <span class="heading-last">Professional Journey</span>
+                </h2>
+                <p class="experience-description">
+                    From professional internships to self-driven projects, every experience has helped me grow as a developer and build stronger real-world skills.
+                </p>
+            </div>
+
+            <!-- Futuristic Timeline Journey Wrapper -->
+            <div class="exp-timeline-wrapper">
+                
+                <!-- Connecting Line Track -->
+                <div class="exp-line-track">
+                    <div class="exp-line-progress" id="exp-line-progress"></div>
+                </div>
+
+                <!-- Experience Entries Grid / Columns -->
+                <div class="exp-entries-grid">
+
+                    <!-- ENTRY 01: Enigmatix -->
+                    <div class="exp-entry-item exp-1" id="exp-item-1">
+                        <div class="exp-node node-enigmatix">
+                            <div class="node-ring"></div>
+                            <span class="exp-node-num">01</span>
+                        </div>
+
+                        <div class="exp-card">
+                            <div class="card-corner-accent"></div>
+                            <div class="exp-card-top">
+                                <div class="exp-company-group">
+                                    <div class="exp-icon-box">
+                                        <i class="fas fa-laptop-code"></i>
+                                    </div>
+                                    <div>
+                                        <span class="exp-company">ENIGMATIX</span>
+                                        <h3 class="exp-role">Frontend Developer Intern</h3>
+                                    </div>
+                                </div>
+                                <span class="exp-date">JUN 2026</span>
+                            </div>
+
+                            <p class="exp-desc">
+                                Worked on modern frontend development, focusing on responsive user interfaces, reusable components and clean web experiences while gaining practical experience in a professional development environment.
+                            </p>
+
+                            <div class="exp-tech-tags">
+                                <span class="exp-tag">HTML</span>
+                                <span class="exp-tag">CSS</span>
+                                <span class="exp-tag">JavaScript</span>
+                                <span class="exp-tag">Responsive UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ENTRY 02: Adeeb Tech Lab -->
+                    <div class="exp-entry-item exp-2" id="exp-item-2">
+                        <div class="exp-node node-adeeb">
+                            <div class="node-ring"></div>
+                            <span class="exp-node-num">02</span>
+                        </div>
+
+                        <div class="exp-card">
+                            <div class="card-corner-accent"></div>
+                            <div class="exp-card-top">
+                                <div class="exp-company-group">
+                                    <div class="exp-icon-box">
+                                        <i class="fas fa-desktop"></i>
+                                    </div>
+                                    <div>
+                                        <span class="exp-company">ADEEB TECH LAB</span>
+                                        <h3 class="exp-role">Frontend Developer Intern</h3>
+                                    </div>
+                                </div>
+                                <span class="exp-date">JUL 2026 – SEP 2026</span>
+                            </div>
+
+                            <p class="exp-desc">
+                                Contributed to frontend development and modern web interfaces while improving practical skills in responsive design, JavaScript interactions and user-focused experiences.
+                            </p>
+
+                            <div class="exp-tech-tags">
+                                <span class="exp-tag">HTML</span>
+                                <span class="exp-tag">CSS</span>
+                                <span class="exp-tag">JavaScript</span>
+                                <span class="exp-tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ENTRY 03: Self Learning (Ongoing) -->
+                    <div class="exp-entry-item exp-3" id="exp-item-3">
+                        <div class="exp-node node-self">
+                            <div class="node-ring"></div>
+                            <span class="exp-node-num">03</span>
+                        </div>
+
+                        <div class="exp-card card-ongoing">
+                            <div class="card-corner-accent"></div>
+                            <div class="exp-card-top">
+                                <div class="exp-company-group">
+                                    <div class="exp-icon-box">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <div>
+                                        <span class="exp-company">SELF LEARNING</span>
+                                        <h3 class="exp-role">Made Projects</h3>
+                                    </div>
+                                </div>
+                                <span class="ongoing-badge">
+                                    <span class="c-dot"></span>
+                                    <span>ONGOING</span>
+                                </span>
+                            </div>
+
+                            <p class="exp-desc">
+                                Continuously learning through self-directed development, building real-world projects and experimenting with modern frontend technologies, UI design and interactive web experiences.
+                            </p>
+
+                            <div class="exp-tech-tags">
+                                <span class="exp-tag">HTML</span>
+                                <span class="exp-tag">CSS</span>
+                                <span class="exp-tag">JavaScript</span>
+                                <span class="exp-tag">Web Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PREMIUM CONTACT / LET'S CONNECT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            
+            <!-- Decorative Orbit Visual Background -->
+            <div class="contact-orbit-bg">
+                <div class="contact-orbit-ring"></div>
+                <div class="contact-orbit-dot"></div>
+            </div>
+
+            <!-- Two-Column Main Grid -->
+            <div class="contact-grid">
+
+                <!-- LEFT COLUMN: Heading, Intro, Details & WhatsApp CTA -->
+                <div class="contact-left">
+                    <div class="welcome-badge">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">AVAILABLE FOR WORK</span>
+                    </div>
+
+                    <h2 class="contact-heading">
+                        <span class="heading-first">Let's Build</span>
+                        <span class="heading-last">Something Great.</span>
+                    </h2>
+
+                    <p class="contact-description">
+                        Have an idea, project or opportunity in mind? Let's turn it into something meaningful, modern and impactful.
+                    </p>
+
+                    <!-- Primary WhatsApp Direct Action CTA -->
+                    <div class="whatsapp-cta-wrapper">
+                        <a href="https://wa.me/923203232069?text=Hello%20Muhammad%20Talha%20Hussain%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20or%20opportunity%20with%20you." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-primary">
+                            <i class="fab fa-whatsapp whatsapp-icon"></i>
+                            <span>Let's Talk on WhatsApp</span>
+                            <i class="fas fa-arrow-right cta-arrow"></i>
+                        </a>
+                    </div>
+
+                    <!-- Contact Details Info Stack -->
+                    <div class="contact-info-stack">
+                        
+                        <!-- EMAIL -->
+                        <div class="contact-info-item">
+                            <div class="info-icon-box">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <span class="info-meta-label">EMAIL</span>
+                                <a href="mailto:talhahussaintalha4@gmail.com" class="info-action-link">
+                                    <span>talhahussaintalha4@gmail.com</span>
+                                    <i class="fas fa-arrow-right link-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- PHONE -->
+                        <div class="contact-info-item">
+                            <div class="info-icon-box">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <span class="info-meta-label">PHONE</span>
+                                <a href="tel:+923203232069" class="info-action-link">
+                                    <span>03203232069</span>
+                                    <i class="fas fa-arrow-right link-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- LOCATION -->
+                        <div class="contact-info-item">
+                            <div class="info-icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <span class="info-meta-label">LOCATION</span>
+                                <span class="info-val-text">Vehari, Punjab, Pakistan</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Minimal Open-Layout Contact Form -->
+                <div class="contact-right">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="card-corner-accent"></div>
+                        
+                        <h3 class="form-title">Send a Direct Message</h3>
+
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <input type="text" id="contact-name" name="name" class="form-input" placeholder=" " required autocomplete="name">
+                            <label for="contact-name" class="form-label">YOUR NAME</label>
+                            <span class="field-error" id="error-name"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <input type="email" id="contact-email" name="email" class="form-input" placeholder=" " required autocomplete="email">
+                            <label for="contact-email" class="form-label">YOUR EMAIL</label>
+                            <span class="field-error" id="error-email"></span>
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="form-group">
+                            <input type="text" id="contact-subject" name="subject" class="form-input" placeholder=" " required autocomplete="off">
+                            <label for="contact-subject" class="form-label">SUBJECT</label>
+                            <span class="field-error" id="error-subject"></span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <textarea id="contact-message" name="message" class="form-textarea" placeholder=" " rows="4" required></textarea>
+                            <label for="contact-message" class="form-label">YOUR MESSAGE</label>
+                            <span class="field-error" id="error-message"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-submit-form" id="btn-submit-form">
+                            <span>Send Message</span>
+                            <i class="fab fa-whatsapp btn-submit-icon"></i>
+                        </button>
+
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PREMIUM FUTURISTIC DEVELOPER FOOTER -->
+    <footer class="footer-section">
+        <!-- Top Animated Beam Line -->
+        <div class="footer-top-line">
+            <div class="footer-beam-highlight"></div>
+        </div>
+
+        <!-- Giant Watermark Typography Background -->
+        <div class="footer-watermark" aria-hidden="true">TALHA</div>
+
+        <div class="footer-container">
+            
+            <div class="footer-main-grid">
+                
+                <!-- LEFT BLOCK: Statement & Thank You -->
+                <div class="footer-grid-left">
+                    <div class="welcome-badge">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">THANK YOU FOR VISITING</span>
+                    </div>
+                    <p class="footer-final-statement">Let's create something remarkable.</p>
+                </div>
+
+                <!-- CENTER BLOCK: Digital Signature Portrait -->
+                <div class="footer-portrait-block">
+                    <div class="footer-portrait-card">
+                        <!-- Two Subtle Orbital Lines -->
+                        <div class="footer-orbit orbit-1"></div>
+                        <div class="footer-orbit orbit-2"></div>
+
+                        <!-- Frame & User's Approved Transparent Portrait -->
+                        <div class="footer-portrait-frame">
+                            <div class="frame-corner corner-tl"></div>
+                            <div class="frame-corner corner-tr"></div>
+                            <div class="frame-corner corner-bl"></div>
+                            <div class="frame-corner corner-br"></div>
+                            <img src="portrait.png" alt="Muhammad Talha Hussain - Frontend Web Developer" class="footer-portrait-img">
+                        </div>
+                    </div>
+
+                    <!-- Portrait Identity Label -->
+                    <div class="footer-identity-group">
+                        <h3 class="footer-brand-name">M TALHA HUSSAIN</h3>
+                        <span class="footer-brand-role">FRONTEND WEB DEVELOPER</span>
+                        <p class="footer-brand-tagline">"Crafting digital experiences with code & creativity."</p>
+                    </div>
+                </div>
+
+                <!-- RIGHT BLOCK: Navigation & Social Links -->
+                <div class="footer-grid-right">
+                    <nav class="footer-nav" aria-label="Footer Navigation">
+                        <ul class="footer-nav-links">
+                            <li><a href="#home" class="footer-nav-link">Home</a></li>
+                            <li><a href="#about" class="footer-nav-link">About</a></li>
+                            <li><a href="#education" class="footer-nav-link">Education</a></li>
+                            <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+                            <li><a href="#experience" class="footer-nav-link">Experience</a></li>
+                            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-social-row">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-github" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-tiktok" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-x" aria-label="X / Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-snapchat" aria-label="Snapchat">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Signature (Clean Final Line) -->
+            <div class="footer-bottom-row">
+                <p class="footer-signature">
+                    Made with <span class="footer-heart">♥</span> by M Talha Hussain
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
