@@ -83,64 +83,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    /* --- 3. DEDICATED LOCALIZED 3D HOVER PARALLAX (HERO WORKSTATION) --- */
-    const heroVisual = document.getElementById('hero-visual');
-    const layerRing = document.getElementById('layer-ring');
-    const layerPlatform = document.getElementById('layer-platform');
-    const layerLaptop = document.getElementById('layer-laptop');
-    const layerHud = document.getElementById('layer-hud');
-    const layerProjection = document.getElementById('layer-projection');
-    const layerRibbon = document.getElementById('layer-ribbon');
-    const layerSphere1 = document.getElementById('layer-sphere1');
-    const layerSphere2 = document.getElementById('layer-sphere2');
-    const layerCube = document.getElementById('layer-cube');
-
-    let heroTargetX = 0, heroTargetY = 0;
-    let heroCurrentX = 0, heroCurrentY = 0;
-
-    if (heroVisual && window.matchMedia('(pointer: fine)').matches) {
-        
-        heroVisual.addEventListener('mouseenter', () => {
-            heroVisual.classList.add('is-hovered');
+    /* --- 3. DEDICATED LOCALIZED HOVER INTERACTION (HERO MASCOT VISUAL) --- */
+    const heroMascotVisual = document.getElementById('hero-mascot-visual');
+    if (heroMascotVisual) {
+        heroMascotVisual.addEventListener('mouseenter', () => {
+            heroMascotVisual.classList.add('is-hovered');
         });
-
-        heroVisual.addEventListener('mousemove', (e) => {
-            const rect = heroVisual.getBoundingClientRect();
-            const x = (e.clientX - rect.left) / rect.width;
-            const y = (e.clientY - rect.top) / rect.height;
-
-            heroTargetX = x * 2 - 1;
-            heroTargetY = y * 2 - 1;
+        heroMascotVisual.addEventListener('mouseleave', () => {
+            heroMascotVisual.classList.remove('is-hovered');
         });
-
-        heroVisual.addEventListener('mouseleave', () => {
-            heroVisual.classList.remove('is-hovered');
-            heroTargetX = 0;
-            heroTargetY = 0;
-        });
-
-        function animateHeroParallax() {
-            heroCurrentX += (heroTargetX - heroCurrentX) * 0.08;
-            heroCurrentY += (heroTargetY - heroCurrentY) * 0.08;
-
-            if (layerRing) layerRing.style.transform = `translate3d(${heroCurrentX * -4}px, ${heroCurrentY * -4}px, 0)`;
-            if (layerPlatform) layerPlatform.style.transform = `translate3d(${heroCurrentX * 5}px, ${heroCurrentY * 5}px, 0)`;
-            if (layerLaptop) {
-                const rotX = heroCurrentY * -4;
-                const rotY = heroCurrentX * 4;
-                layerLaptop.style.transform = `translate3d(${heroCurrentX * 12}px, ${heroCurrentY * 12}px, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
-            }
-            if (layerHud) layerHud.style.transform = `translate3d(${heroCurrentX * 10}px, ${heroCurrentY * 10}px, 0)`;
-            if (layerProjection) layerProjection.style.transform = `translate3d(${heroCurrentX * 8}px, ${heroCurrentY * 8}px, 0)`;
-            if (layerRibbon) layerRibbon.style.transform = `translate3d(${heroCurrentX * 6}px, ${heroCurrentY * 6}px, 0)`;
-            if (layerSphere1) layerSphere1.style.transform = `translate3d(${heroCurrentX * -8}px, ${heroCurrentY * -8}px, 0)`;
-            if (layerSphere2) layerSphere2.style.transform = `translate3d(${heroCurrentX * 10}px, ${heroCurrentY * 10}px, 0)`;
-            if (layerCube) layerCube.style.transform = `translate3d(${heroCurrentX * 9}px, ${heroCurrentY * 9}px, 0)`;
-
-            requestAnimationFrame(animateHeroParallax);
-        }
-
-        animateHeroParallax();
     }
 
 
@@ -200,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     milestoneItems.forEach((item, idx) => {
                         setTimeout(() => {
                             item.classList.add('active');
-                        }, 300 * (idx + 1));
+                        }, 100 * (idx + 1));
                     });
                 }
             });

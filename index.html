@@ -27,9 +27,47 @@
     <!-- Floating Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <!-- Left: Logo -->
-            <a href="#home" class="nav-logo">
-                <span class="logo-bracket">&lt;/&gt;</span>
+            <!-- Left: Digital Identity Emblem Logo -->
+            <a href="#home" class="nav-brand-emblem" aria-label="Muhammad Talha Hussain - Home">
+                <!-- Emblem Visual Frame -->
+                <div class="emblem-visual">
+                    <!-- Corner Technical Markers -->
+                    <span class="corner-marker top-left">┌</span>
+                    <span class="corner-marker top-right">┐</span>
+                    <span class="corner-marker bottom-left">└</span>
+                    <span class="corner-marker bottom-right">┘</span>
+                    <span class="emblem-tag tag-tl">01</span>
+                    <span class="emblem-tag tag-br">MTH</span>
+
+                    <!-- SVG Orbit & Technical Ring -->
+                    <svg class="emblem-orbit-svg" viewBox="0 0 52 52">
+                        <circle class="orbit-track" cx="26" cy="26" r="23" />
+                        <circle class="orbit-segment" cx="26" cy="26" r="23" />
+                        <circle class="orbit-node node-1" cx="26" cy="3" r="1.5" />
+                        <circle class="orbit-node node-2" cx="49" cy="26" r="1.5" />
+                        <circle class="orbit-node node-3" cx="26" cy="49" r="1.5" />
+                        <circle class="orbit-node node-4" cx="3" cy="26" r="1.5" />
+                    </svg>
+
+                    <!-- Portrait Crop Frame -->
+                    <div class="portrait-frame">
+                        <img src="navbar_artwork.png" alt="M Talha Hussain" class="emblem-portrait-img">
+                        <div class="emblem-scanline"></div>
+                    </div>
+                </div>
+
+                <!-- Personal Brand Text Stack -->
+                <div class="emblem-brand-info">
+                    <div class="brand-name">
+                        <span class="name-main">M TALHA</span>
+                        <span class="name-short">MTH</span>
+                    </div>
+                    <div class="brand-title">FRONTEND DEVELOPER</div>
+                    <div class="brand-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">AVAILABLE</span>
+                    </div>
+                </div>
             </a>
 
             <!-- Center: Links -->
@@ -104,189 +142,96 @@
                 <div class="social-section">
                     <span class="social-label">FIND ME ON</span>
                     <div class="social-links">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/muhammad-talha-hussain-33939a3b7/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                        <a href="https://github.com/TalhaHussain69" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="mailto:talhahussaintalha4@gmail.com" class="social-btn" aria-label="Email">
                             <i class="far fa-envelope"></i>
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                        <a href="https://www.instagram.com/itx_talha4895/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- RIGHT COLUMN: 3D Visual Workstation (Dedicated Hover Container) -->
+            <!-- RIGHT COLUMN: Premium Floating 3D Developer Pod Environment -->
             <div class="hero-right">
-                <div class="hero-visual" id="hero-visual">
-                    <div class="scene-3d-wrapper" id="scene-wrapper">
-                        <!-- Cyan Radial Glow behind 3D visual -->
-                        <div class="scene-cyan-glow"></div>
+                <div class="hero-mascot-visual" id="hero-mascot-visual">
+                    <div class="mascot-scene-wrapper">
+                        <!-- 1. Soft Dark-Teal Atmospheric Background Shape -->
+                        <div class="mascot-ambient-glow"></div>
+                        <div class="mascot-pod-atmosphere"></div>
 
-                        <!-- 1. Upgraded Holographic Ring System -->
-                        <div class="holographic-ring-container" id="layer-ring">
-                            <div class="holographic-ring">
-                                <div class="ring-layer ring-outer-metal"></div>
-                                <div class="ring-layer ring-cyan-glow"></div>
-                                <div class="ring-layer ring-segmented">
-                                    <span class="seg seg-1"></span>
-                                    <span class="seg seg-2"></span>
-                                    <span class="seg seg-3"></span>
-                                </div>
-                                <div class="ring-layer ring-hud-circle"></div>
-                                <div class="ring-layer ring-inner-core"></div>
+                        <!-- 2. Multi-Ring Orbit System (Independent Rotations & Signal Particles) -->
+                        <div class="mascot-ellipse-orbit">
+                            <!-- Outer Ring (18s Rotation) -->
+                            <div class="orbit-ring-wrapper ring-outer-wrapper">
+                                <svg viewBox="0 0 460 320" class="orbit-ring-svg">
+                                    <ellipse cx="230" cy="160" rx="210" ry="125" class="orbit-ring-track outer" />
+                                    <ellipse cx="230" cy="160" rx="210" ry="125" class="orbit-ring-pulse outer-signal" />
+                                    <circle cx="440" cy="160" r="2.5" class="orbit-node node-a" />
+                                </svg>
+                            </div>
+                            <!-- Inner Ring (24s Reverse Rotation) -->
+                            <div class="orbit-ring-wrapper ring-inner-wrapper">
+                                <svg viewBox="0 0 460 320" class="orbit-ring-svg">
+                                    <ellipse cx="230" cy="160" rx="165" ry="95" class="orbit-ring-track inner" />
+                                    <ellipse cx="230" cy="160" rx="165" ry="95" class="orbit-ring-pulse inner-signal" />
+                                    <circle cx="65" cy="160" r="2.5" class="orbit-node node-b" />
+                                </svg>
                             </div>
                         </div>
 
-                        <!-- 2. Futuristic Energy Levitation Base -->
-                        <div class="energy-core-container" id="layer-platform">
-                            <div class="energy-core">
-                                <div class="core-ring-outer"></div>
-                                <div class="core-ring-cyan"></div>
-                                <div class="core-glowing-center"></div>
-                                <div class="core-pulses"></div>
-                                <div class="core-under-glow"></div>
-                                
-                                <!-- 3D Curved Teal Energy Ribbon -->
-                                <div class="energy-ribbon-3d" id="layer-ribbon">
-                                    <svg viewBox="0 0 400 220" class="ribbon-svg">
-                                        <path d="M 20,180 Q 140,210 270,110 T 380,30" fill="none" stroke="url(#ribbon-grad)" stroke-width="3" filter="url(#glow-filter)" />
-                                        <defs>
-                                            <linearGradient id="ribbon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                                <stop offset="0%" stop-color="#00E5E5" stop-opacity="0.2" />
-                                                <stop offset="50%" stop-color="#00E5E5" stop-opacity="1" />
-                                                <stop offset="100%" stop-color="#00B8B8" stop-opacity="0.3" />
-                                            </linearGradient>
-                                            <filter id="glow-filter" x="-20%" y="-20%" width="140%" height="140%">
-                                                <feGaussianBlur stdDeviation="5" result="blur" />
-                                                <feMerge>
-                                                    <feMergeNode in="blur" />
-                                                    <feMergeNode in="SourceGraphic" />
-                                                </feMerge>
-                                            </filter>
-                                        </defs>
-                                    </svg>
-                                </div>
+                        <!-- 3. Thin Curved Teal Line Connecting Platform to Orbit System -->
+                        <div class="pod-connector-line">
+                            <svg viewBox="0 0 400 300" class="connector-line-svg">
+                                <path d="M 60,260 C 40,180 80,100 120,60" fill="none" stroke="url(#connector-grad)" stroke-width="1.5" stroke-dasharray="4 4" class="connector-path" />
+                                <path d="M 340,260 C 360,180 320,100 280,60" fill="none" stroke="url(#connector-grad)" stroke-width="1.5" stroke-dasharray="4 4" class="connector-path" />
+                                <defs>
+                                    <linearGradient id="connector-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+                                        <stop offset="0%" stop-color="var(--primary-teal)" stop-opacity="0.6" />
+                                        <stop offset="100%" stop-color="var(--primary-teal)" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <!-- 4. Futuristic Grounding Floor / Elliptical Platform underneath chair -->
+                        <div class="hero-mascot-platform">
+                            <div class="platform-ring-outer"></div>
+                            <div class="platform-ring-inner"></div>
+                            <div class="platform-reflection-line"></div>
+                            <div class="platform-light-node"></div>
+                            <div class="platform-glow-shadow"></div>
+                            <!-- Rising Platform Micro Particles -->
+                            <div class="platform-rising-particles">
+                                <span class="p-rise pr1"></span>
+                                <span class="p-rise pr2"></span>
                             </div>
                         </div>
 
-                        <!-- 3. Main Futuristic Developer Workstation (Floating Laptop) -->
-                        <div class="laptop-workstation-container" id="layer-laptop">
-                            <div class="workstation-3d">
-                                
-                                <!-- Floating Holographic HUD Elements Above Screen -->
-                                <div class="holographic-hud-group" id="layer-hud">
-                                    <span class="hud-pill pill-html">HTML</span>
-                                    <span class="hud-pill pill-css">CSS</span>
-                                    <span class="hud-pill pill-js">JS</span>
-                                    <span class="hud-pill pill-ui">UI/UX</span>
-                                </div>
-
-                                <!-- Floating Holographic Projected Code Symbol Above Keyboard -->
-                                <div class="holographic-projection" id="layer-projection">
-                                    <div class="projection-beam"></div>
-                                    <div class="projection-code">&lt;/&gt;</div>
-                                </div>
-
-                                <!-- Laptop Chassis -->
-                                <div class="laptop-chassis">
-                                    
-                                    <!-- Screen Display angled 105-110 deg -->
-                                    <div class="screen-chassis">
-                                        <div class="screen-bevel">
-                                            <div class="webcam-dot"></div>
-                                            <div class="screen-display">
-                                                <div class="display-glow"></div>
-                                                <div class="display-header">
-                                                    <span class="dot dot-r"></span>
-                                                    <span class="dot dot-y"></span>
-                                                    <span class="dot dot-g"></span>
-                                                    <span class="title-bar">main.js</span>
-                                                </div>
-                                                <div class="display-code-editor">
-                                                    <div class="code-line-row">
-                                                        <span class="c-tag">&lt;</span><span class="c-keyword">Developer</span> <span class="c-tag">/&gt;</span>
-                                                    </div>
-                                                    <div class="code-line-row blank"></div>
-                                                    <div class="code-line-row">
-                                                        <span class="c-var">const</span> <span class="c-name">experience</span> = {
-                                                    </div>
-                                                    <div class="code-line-row indent">
-                                                        <span class="c-prop">design:</span> <span class="c-str">"creative"</span>,
-                                                    </div>
-                                                    <div class="code-line-row indent">
-                                                        <span class="c-prop">code:</span> <span class="c-str">"clean"</span>,
-                                                    </div>
-                                                    <div class="code-line-row indent">
-                                                        <span class="c-prop">future:</span> <span class="c-bool">true</span>
-                                                    </div>
-                                                    <div class="code-line-row">
-                                                        };
-                                                    </div>
-                                                </div>
-                                                <div class="scanner-line"></div>
-                                                <div class="display-reflection"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Keyboard Base / Chassis Deck -->
-                                    <div class="base-chassis">
-                                        <div class="deck-surface">
-                                            <div class="keyboard-casing">
-                                                <div class="kb-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-                                                <div class="kb-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-                                                <div class="kb-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-                                                <div class="kb-row kb-bottom"><span class="key-spacebar"></span></div>
-                                            </div>
-                                            <div class="trackpad-glass"></div>
-                                            <div class="chassis-power-led"></div>
-                                        </div>
-                                        <div class="chassis-edge-glow"></div>
-                                    </div>
-
-                                </div>
-                                
-                                <!-- Under-laptop Levitation Glow Gap -->
-                                <div class="levitation-cyan-glow"></div>
-                            </div>
+                        <!-- 5. Main Character Image (Directly Sitting ON Grounding Platform) -->
+                        <div class="mascot-character-container">
+                            <img src="hero_mascot.png" alt="Muhammad Talha Hussain - Developer Mascot" class="mascot-character-img">
                         </div>
 
-                        <!-- 4. Refined Floating 3D Objects -->
-                        <!-- Metallic Dark Pearl Sphere -->
-                        <div class="floating-element sphere-pearl" id="layer-sphere1">
-                            <div class="sphere sphere-dark-pearl"></div>
+                        <!-- 6. Minimal Floating UI / Code Symbols (</>, { }, JS) -->
+                        <div class="mascot-ui-accents">
+                            <span class="ui-code-tag tag-code">&lt;/&gt;</span>
+                            <span class="ui-code-tag tag-braces">{ }</span>
+                            <span class="ui-code-tag tag-js">JS</span>
+                            <span class="ui-code-tag tag-dot d1"></span>
                         </div>
 
-                        <!-- Glowing Teal Sphere -->
-                        <div class="floating-element sphere-cyan" id="layer-sphere2">
-                            <div class="sphere sphere-glowing-teal"></div>
+                        <!-- 7. Ambient Depth Micro Particles (2 Particles) -->
+                        <div class="mascot-particles">
+                            <span class="m-particle mp1"></span>
+                            <span class="m-particle mp2"></span>
                         </div>
-
-                        <!-- Transparent Glass-like Teal 3D Code Cube -->
-                        <div class="floating-element glass-cube-wrapper" id="layer-cube">
-                            <div class="glass-cube-3d">
-                                <div class="g-face face-f">&lt;/&gt;</div>
-                                <div class="g-face face-b"></div>
-                                <div class="g-face face-r"></div>
-                                <div class="g-face face-l"></div>
-                                <div class="g-face face-t"></div>
-                                <div class="g-face face-bot"></div>
-                            </div>
-                        </div>
-
-                        <!-- Ambient Dust Particles -->
-                        <div class="scene-particles">
-                            <span class="sc-particle p1"></span>
-                            <span class="sc-particle p2"></span>
-                            <span class="sc-particle p3"></span>
-                            <span class="sc-particle p4"></span>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -498,6 +443,7 @@
                         <div class="card-corner-accent"></div>
                         <div class="feature-icon"><i class="fas fa-crosshairs"></i></div>
                         <h3 class="feature-title">Detail Oriented</h3>
+                        <span class="feature-title-line"></span>
                         <p class="feature-desc">I pay attention to every small detail and believe it makes the big difference.</p>
                     </div>
 
@@ -505,6 +451,7 @@
                         <div class="card-corner-accent"></div>
                         <div class="feature-icon"><i class="fas fa-rocket"></i></div>
                         <h3 class="feature-title">Fast Learner</h3>
+                        <span class="feature-title-line"></span>
                         <p class="feature-desc">I enjoy learning new technologies and building better digital solutions.</p>
                     </div>
 
@@ -512,6 +459,7 @@
                         <div class="card-corner-accent"></div>
                         <div class="feature-icon"><i class="far fa-lightbulb"></i></div>
                         <h3 class="feature-title">Problem Solver</h3>
+                        <span class="feature-title-line"></span>
                         <p class="feature-desc">I love solving problems and turning complex challenges into simple UI.</p>
                     </div>
 
@@ -519,6 +467,7 @@
                         <div class="card-corner-accent"></div>
                         <div class="feature-icon"><i class="fas fa-code"></i></div>
                         <h3 class="feature-title">Clean Coder</h3>
+                        <span class="feature-title-line"></span>
                         <p class="feature-desc">I write clean, structured and maintainable code for scale and reliability.</p>
                     </div>
                 </div>
