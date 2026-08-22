@@ -446,3 +446,358 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+/* ==========================
+   Back To Top Button
+========================== */
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > window.innerHeight * 0.8) {
+
+        backToTop.classList.add("show");
+
+    } else {
+
+        backToTop.classList.remove("show");
+    }
+});
+
+backToTop.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+
+
+
+
+
+/* ====================================
+   TALHA AI COPILOT
+==================================== */
+
+const aiToggle = document.getElementById("aiToggle");
+const aiChat = document.getElementById("aiChat");
+const closeAi = document.getElementById("closeAi");
+const prompts = document.querySelectorAll(".prompt-btn");
+const messages = document.querySelector(".ai-messages");
+
+aiToggle.addEventListener("click", () => {
+    aiChat.classList.toggle("active");
+});
+
+closeAi.addEventListener("click", () => {
+    aiChat.classList.remove("active");
+});
+
+
+const answers = {
+
+    Projects:
+    "I've built cloth store website, Travel aur tourism, Trading website and Dino Game. All projects are responsive and you can see them on my github.",
+
+    Skills:
+    "Talha specializes in HTML, CSS, JavaScript, Git, GitHub, Responsive Design and Frontend Development.",
+
+    Internship:
+    "Talha is currently working as a Frontend Developer Intern at Enigmatix where he develops modern UI experiences.",
+
+    Resume: `
+I've found Talha's latest resume.
+
+<br><br>
+
+<strong>Key Highlights</strong>
+
+<br>• Frontend Developer
+<br>• Enigmatix Intern
+<br>• Responsive UI Specialist
+
+<div class="resume-actions">
+
+    <a
+        href="https://drive.google.com/file/d/1CdOE5gJfXmZ8mxnWBzorA7QuPilnP03K/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="resume-btn"
+    >
+        📄 View Resume
+    </a>
+
+</div>
+`,
+
+    Contact:
+    "You can connect through Email, GitHub and LinkedIn."
+};
+
+prompts.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        const question = btn.textContent.trim();
+
+        messages.innerHTML += `
+        <div class="ai-bubble ai-user">
+            ${question}
+        </div>
+        `;
+
+        messages.scrollTop =
+        messages.scrollHeight;
+
+        const typing = document.createElement("div");
+
+        typing.className = "typing";
+
+        typing.innerHTML = `
+        <span></span>
+        <span></span>
+        <span></span>
+        `;
+
+        messages.appendChild(typing);
+
+        messages.scrollTop =
+        messages.scrollHeight;
+
+        setTimeout(() => {
+
+            typing.remove();
+
+            messages.innerHTML += `
+            <div class="ai-bubble ai-bot">
+                ${answers[question]}
+            </div>
+            `;
+
+            messages.scrollTop =
+            messages.scrollHeight;
+
+        }, 1200);
+
+    });
+
+});
+
+
+/* ====================================
+   TALHA AI INPUT SYSTEM
+==================================== */
+
+const aiInput =
+document.getElementById("aiInput");
+
+const sendBtn =
+document.getElementById("sendAiMessage");
+
+function addUserMessage(text){
+
+    messages.innerHTML += `
+        <div class="ai-bubble ai-user">
+            ${text}
+        </div>
+    `;
+
+    messages.scrollTop =
+    messages.scrollHeight;
+}
+
+function addBotMessage(text){
+
+    messages.innerHTML += `
+        <div class="ai-bubble ai-bot">
+            ${text}
+        </div>
+    `;
+
+    messages.scrollTop =
+    messages.scrollHeight;
+}
+
+function showThinking(){
+
+    const thinking =
+    document.createElement("div");
+
+    thinking.className =
+    "ai-thinking";
+
+    thinking.id =
+    "thinkingBubble";
+
+    thinking.innerHTML = `
+        <span></span>
+        <span></span>
+        <span></span>
+    `;
+
+    messages.appendChild(thinking);
+
+    messages.scrollTop =
+    messages.scrollHeight;
+}
+
+function hideThinking(){
+
+    const thinking =
+    document.getElementById(
+        "thinkingBubble"
+    );
+
+    if(thinking){
+
+        thinking.remove();
+    }
+}
+
+function processAiMessage(){
+
+    const value =
+    aiInput.value.trim();
+
+    if(!value) return;
+
+    addUserMessage(value);
+    showThinking();
+
+    aiInput.value = "";
+
+    const query =
+    value.toLowerCase();
+
+    setTimeout(() => {
+        hideThinking();
+
+        if(
+            query.includes("project")
+        ){
+
+            addBotMessage(
+                "Opening Projects Section..."
+            );
+
+            document
+            .querySelector("#projects")
+            ?.scrollIntoView({
+                behavior:"smooth"
+            });
+
+        }
+
+        else if(
+            query.includes("skill")
+        ){
+
+            addBotMessage(
+                "Opening Skills Section..."
+            );
+
+            document
+            .querySelector("#skills")
+            ?.scrollIntoView({
+                behavior:"smooth"
+            });
+
+        }
+
+        else if(
+            query.includes("contact")
+        ){
+
+            addBotMessage(
+                "Opening Contact Section..."
+            );
+
+            document
+            .querySelector("#contact")
+            ?.scrollIntoView({
+                behavior:"smooth"
+            });
+
+        }
+
+        else if(
+            query.includes("resume")
+        ){
+
+            addBotMessage(
+                `
+                Resume Found.
+
+                <br><br>
+
+                <a
+                href="https://drive.google.com/file/d/1CdOE5gJfXmZ8mxnWBzorA7QuPilnP03K/view?usp=sharing"
+                target="_blank"
+                class="resume-btn">
+
+                View Resume
+
+                </a>
+                `
+            );
+
+        }
+
+        else{
+
+            addBotMessage(
+                "Try asking about Projects, Skills, Resume or Contact."
+            );
+        }
+
+    },600);
+}
+
+sendBtn.addEventListener(
+    "click",
+    processAiMessage
+);
+
+aiInput.addEventListener(
+    "keydown",
+    e => {
+
+        if(e.key === "Enter"){
+
+            processAiMessage();
+        }
+
+    }
+);
+
+
+setTimeout(() => {
+
+    const note =
+    document.createElement("div");
+
+    note.className =
+    "ai-notification";
+
+   note.innerHTML =
+"🤖 Need help exploring Talha's portfolio?";
+
+    document
+    .getElementById("aiAssistant")
+    .appendChild(note);
+
+    setTimeout(() => {
+
+        note.remove();
+
+    },5000);
+
+},3000);
+
+
+
+
