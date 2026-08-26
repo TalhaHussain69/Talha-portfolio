@@ -1112,7 +1112,7 @@ setTimeout(() => {
 
     const note = document.createElement("div");
     note.className = "ai-notification";
-    note.textContent = "🤖 Ask anything about Talha";
+    note.textContent = "🤖 Explore Talha with AI";
     assistant.appendChild(note);
 
     setTimeout(() => {

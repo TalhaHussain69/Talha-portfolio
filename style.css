@@ -6915,3 +6915,11 @@ button {
             scale(1);
     }
 }
+
+/* AI Floating Notification - Light Theme Fix */
+.ai-notification {
+    color: #0f172a !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    border: 1px solid rgba(0, 200, 210, 0.35);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
