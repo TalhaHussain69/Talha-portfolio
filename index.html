@@ -1197,97 +1197,207 @@
 </button>
 
 
+
 <!-- ====================================
-     TALHA AI COPILOT
+     TALHA AI COPILOT — PREMIUM UI
 ==================================== -->
 
 <div id="aiAssistant">
 
-    <button id="aiToggle">
-        <i class="fas fa-robot"></i>
+    <!-- Floating AI Button -->
+    <button id="aiToggle" aria-label="Open Talha AI Copilot">
+        <span class="ai-orb-core">
+            <i class="fas fa-robot"></i>
+        </span>
+
+        <span class="ai-orb-ring ring-one"></span>
+        <span class="ai-orb-ring ring-two"></span>
+        <span class="ai-live-dot"></span>
     </button>
 
+
+    <!-- AI Chat Window -->
     <div id="aiChat">
 
+        <!-- Header -->
         <div class="ai-header">
 
-            <div class="ai-avatar">
-                <!-- 🤖 -->
-                 <i class="fas fa-robot"></i>
+            <div class="ai-avatar-wrap">
+
+                <div class="ai-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+
+                <span class="avatar-pulse"></span>
+
             </div>
+
 
             <div class="ai-info">
-                <h4>Talha AI Copilot</h4>
-                <span>Online</span>
+
+                <div class="ai-title-row">
+
+                    <h4>Talha AI Copilot</h4>
+
+                    <span class="ai-version">
+                        AI
+                    </span>
+
+                </div>
+
+                <div class="ai-status">
+
+                    <span class="status-dot" id="aiStatusDot"></span>
+
+                    <span id="aiStatusText">Online & Ready</span>
+
+                </div>
+
             </div>
 
 
-            <button id="closeAi">
-                <i class="fas fa-times"></i>
+            <button
+                id="closeAi"
+                aria-label="Close AI Copilot"
+            >
+                <i class="fas fa-xmark"></i>
             </button>
 
         </div>
 
+
+        <!-- Messages -->
         <div class="ai-messages">
 
-            <div class="ai-bubble ai-bot">
-                👋 Hello Recruiter! <br><br>
+            <div class="ai-bubble ai-bot ai-welcome-message">
 
-                I'm Talha's AI Copilot.
+                <div class="ai-message-top">
 
-                Ask me about:
-                <br><br>
+                    <span class="ai-message-icon">
+                        <i class="fas fa-bolt"></i>
+                    </span>
 
-                • Projects <br>
-                • Skills <br>
-                • Internship <br>
-                • Resume <br>
-                • Contact
+                    <span class="ai-message-label">
+                        TALHA AI
+                    </span>
+
+                </div>
+
+                <p class="welcome-text">
+                    Hi! I'm Talha's AI Copilot. Ask me anything about his skills, projects, experience, or resume!
+                </p>
+
             </div>
 
         </div>
 
-        <div class="ai-prompts">
 
-            <button class="prompt-btn">
-                Projects
-            </button>
+        <!-- Quick Prompts -->
+        <div class="ai-prompt-area">
 
-            <button class="prompt-btn">
-                Skills
-            </button>
+            <div class="ai-prompt-heading">
 
-            <button class="prompt-btn">
-                Internship
-            </button>
+                <span>
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    QUICK START
+                </span>
 
-            <button class="prompt-btn">
-                Resume
-            </button>
+                <span class="ai-prompt-line"></span>
 
-            <button class="prompt-btn">
-                Contact
+            </div>
+
+
+            <div class="ai-prompts">
+
+                <button class="prompt-btn">
+                    <i class="fas fa-user"></i>
+                    Who is Talha?
+                </button>
+
+                <button class="prompt-btn">
+                    <i class="fas fa-code"></i>
+                    Talha's Skills
+                </button>
+
+                <button class="prompt-btn">
+                    <i class="fas fa-rocket"></i>
+                    His Projects
+                </button>
+
+                <button class="prompt-btn">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </button>
+
+                <button class="prompt-btn">
+                    <i class="fas fa-briefcase"></i>
+                    Experience
+                </button>
+
+                <button class="prompt-btn">
+                    <i class="fas fa-handshake"></i>
+                    Why hire Talha?
+                </button>
+
+                <button class="prompt-btn">
+                    <i class="fas fa-file-lines"></i>
+                    Resume
+                </button>
+
+                <button class="prompt-btn">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Input -->
+        <div class="ai-input-area">
+
+            <div class="ai-input-shell">
+
+                <i class="fas fa-sparkles ai-input-icon"></i>
+
+                <input
+                    type="text"
+                    id="aiInput"
+                    autocomplete="off"
+                    placeholder="Ask Talha AI anything..."
+                >
+
+            </div>
+
+
+            <button
+                id="sendAiMessage"
+                aria-label="Send message"
+            >
+                <i class="fas fa-arrow-up"></i>
             </button>
 
         </div>
 
-        <div class="ai-input-area">
 
-    <input
-        type="text"
-        id="aiInput"
-        placeholder="Ask Talha AI..."
-    >
+        <div class="ai-footer-note">
 
-    <button id="sendAiMessage">
-        <i class="fas fa-paper-plane"></i>
-    </button>
+            <span>
+                <i class="fas fa-shield-halved"></i>
+                Talha AI Copilot
+            </span>
 
-</div>
+            <span>
+                Powered by AI
+            </span>
+
+        </div>
 
     </div>
 
 </div>
+
 
     <script src="script.js"></script>
 </body>
